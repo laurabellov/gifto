@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ImageView
+        android:layout_width="600dp"
+        android:layout_height="900dp"
+        android:alpha="0.6"
+        android:src="@drawable/b"
+        tools:ignore="MissingConstraints" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:fontFamily="@font/pacifico_header"
+            android:gravity="center"
+            android:text="gifto"
+            android:textColor="#ffa69e"
+            android:textSize="20pt" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
+                android:layout_width="250dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:ems="10"
+                android:fontFamily="@font/basic"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:textSize="25dp" />
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="false"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:fontFamily="@font/basic"
+                android:hint="Password"
+                android:layout_gravity="center"
+                android:inputType="textPersonName"
+                android:textSize="25dp" />
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passworedo"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:fontFamily="@font/basic"
+                android:hint="Retype Password"
+                android:inputType="textPersonName"
+                android:textSize="25dp"
+                />
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="82dp"
+            android:layout_height="77dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/camera"
+            />
+
+
+        <Button
+            android:id="@+id/camerabtn"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#faf3dd"
+            android:fontFamily="@font/pacifico_header"
+            android:text="take photo"
+            android:textSize="10dp"
+            android:textColor=" #92ACC0"
+            app:iconTint="#FFFFFF" />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/signupbtn"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="sign up"
+            android:fontFamily="@font/pacifico_header"
+            android:backgroundTint="#faf3dd"
+            android:textColor=" #92ACC0"
+            app:iconTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/existuserbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#faf3dd"
+            android:fontFamily="@font/pacifico_header"
+            android:text="Existing account! go to login page"
+            android:textColor=" #92ACC0"
+            android:textSize="10dp"
+            app:iconTint="#FFFFFF" />
+
+
+
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

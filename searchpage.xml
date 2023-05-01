@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aed9e0"
+    tools:context=".SearchPage">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="413dp"
+            android:layout_height="76dp"
+            android:background="@drawable/a"
+            android:fontFamily="@font/pacifico_header"
+            android:text="      find the perfect gifto"
+            android:textColor="#ffa69e"
+            android:textSize="15pt"
+            tools:layout_editor_absoluteY="14dp" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="143dp"
+            android:orientation="vertical"
+            android:background="@drawable/shape3"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/basic"
+                android:gravity="center"
+                android:text="Select gift options"
+                android:textColor="#faf3dd"
+                android:textSize="25dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <Spinner
+                    android:id="@+id/categorySpinner"
+                    android:layout_width="161dp"
+                    android:layout_height="match_parent"
+                    android:entries="@array/categories"
+
+                   />
+                <Spinner
+                    android:id="@+id/hobbySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/hobbies"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <Spinner
+                    android:id="@+id/ageSpinner"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/ages"
+                     />
+
+                <Spinner
+                    android:id="@+id/genderSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/genders"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/showGiftsButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/basic"
+            android:text="Show gift ideas"
+            android:textSize="20dp"
+            android:backgroundTint="#7c98b3"/>
+
+        <TextView
+            android:id="@+id/gift_ideas_text_view"
+            android:layout_width="342dp"
+            android:layout_height="382dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/basic"
+            android:textSize="15dp"
+            android:background="@drawable/shape" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape2"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#5e6472"
+            android:src="@drawable/profile" />
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#5e6472"
+            android:src="@drawable/search" />
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#5e6472"
+            android:src="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#5e6472"
+            android:src="@drawable/settings" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
